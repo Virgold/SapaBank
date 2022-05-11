@@ -30,7 +30,7 @@
                             </div>
                             <div class="mb-4">
                                 <label for="formInputPhone" class="d-flex justify-content-between">
-                                    <p>Phone Number</p>
+                                    <p>Phone Number</p>   
                                 </label>
                                 <input type="tel" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
                             </div>
