@@ -292,39 +292,37 @@
                 <div class="row">
                   <div class="col-12 mb-4 mb-lg-0">
                     <!-- Card -->
-                    <div class="card shadow border-white">
+                    <div class="card p-2 p-md-2 shadow border-white">
                       <!-- Card body -->
                       <div class="card-body p-2 p-md-4">
-                        <div
-                          class="
-                            d-flex
-                            flex-row
-                            justify-content-evenly
-                            gap-3
-                            align-items-center
-                          "
-                        >
-                          <p class="fw-bold mt-2">
+                        <h5 class="card-title d-flex flex-row">
+                            <div class="card-icon">
+                               <span class="iconify" data-icon="emojione:star"></span>
+                               <span class="iconify" data-icon="emojione:star"></span>
+                               <span class="iconify" data-icon="emojione:star"></span>
+                               <span class="iconify" data-icon="emojione:star"></span>
+                               <!-- <span class="iconify" data-icon="el:star" style="color: #af8055;"></span>
+                               <span class="iconify" data-icon="el:star" style="color: #af8055;"></span>
+                               <span class="iconify" data-icon="el:star" style="color: #af8055;"></span> -->
+                            </div>
+
+                             <div class="card-Profile d-flex flex-row gap-3 ms-auto">
+                                  <img src="@/assets/images/image1.jpeg" alt="" class="img-fluid shadow" style="width: 50px; height:50px; border-radius:50%">
+                               <div class="card-Profile-details my-auto">
+                                  <h6 class="fw-bold m-0">John Doe</h6>
+                                  <p class="fs-6 text-muted m-0">Client</p>
+                               </div>
+
+                             </div>
+                        </h5>
+                        <div>
+                          <p class="card-text fw-bold mt-2">
+                            <span class="iconify fs-2" data-icon="ri:double-quotes-l" style="color: #af8055;"></span>
                             I have been using sapa bank for 1 year and believe
                             me its exactly what you need during your broke
-                            period
-                            <span class="iconify" data-icon="emojione:star"></span>
-                            <span class="iconify" data-icon="emojione:star"></span>
-                            <span class="iconify" data-icon="emojione:star"></span>
-                            <span class="iconify" data-icon="emojione:star"></span>
+                            period. The truth is that most of the times I am broke so Sapa bank is my bank.
+                            <span class="iconify fs-2" data-icon="ri:double-quotes-r" style="color: #af8055;"></span>
                           </p>
-                          <button
-                            class="
-                              btn
-                              btnSuccess
-                              rounded-circle
-                              fw-bold
-                              text-center
-                            "
-                            style="width: 50px; height: 50px"
-                          >
-                            C
-                          </button>
                         </div>
                       </div>
                     </div>
