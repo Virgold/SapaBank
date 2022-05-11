@@ -1,24 +1,24 @@
 <template>
-  <LandingPage/>
+  <router-view />
 </template>
 
 <script>
-import LandingPage from './components/LandingPage.vue'
+// import LandingPage from './views/LandingPage.vue'
 
-export default {
-  name: 'App',
-  components: {
-    LandingPage
-}
-}
+// export default {
+//   name: 'App',
+//   components: {
+//     LandingPage
+// }
+// }
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin-top: 60px;
-}
+} */
 </style>
