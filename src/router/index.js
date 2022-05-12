@@ -1,17 +1,27 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Home from "../views/HomeView.vue";
-import Page from "../views/LandingPage.vue";
-import SignUp from "../components/SignupPage.vue";
+import Home from '../views/HomeView.vue'
+import dashboardLayout from '@/Layouts/dashboardLayout.vue'
+import dashboardView from "../views/bankDashboardView.vue";
+
 
 const routes = [{
     path: "/",
     name: "Home",
     component: Home,
 },
+
 {
-    path: "/LandingPage.vue",
-    name: "LandingPage",
-    component: Page,
+    path: "/dashboardLayout",
+    name: "dashboardLayout",
+    component: dashboardLayout,
+    redirect:"/dashboardLayout/dashboardView",
+    children:[
+        {
+            path: "/dashboardLayout/dashboardView",
+            name: "dashboardView",
+            component: dashboardView,
+        },
+    ]
 },
 {
     path:"/SignupPage.vue",
