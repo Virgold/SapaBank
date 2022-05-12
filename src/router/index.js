@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/HomeView.vue";
 import Page from "../views/LandingPage.vue";
 import SignUp from "../components/SignupPage.vue";
+import Airtime from "../components/airtime_page.vue";
 
 const routes = [{
     path: "/",
@@ -14,9 +15,14 @@ const routes = [{
     component: Page,
 },
 {
-    path:"/SignupPage.vue",
+    path:"/SignupPage",
     name:"SignupPage",
     component:SignUp,
+},
+{
+    path:"/airtime_page",
+    name:"airtime",
+    component:Airtime,
 }
 
 ]

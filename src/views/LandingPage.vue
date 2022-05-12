@@ -36,8 +36,8 @@
               <a href="#" class="btn btn-sm btnSuccess px-3 rounded shadow me-1"
                 >Login</a
               >
-              <a href="#" class="btn btn-sm btnWarning px-3 rounded shadow"
-                >Sign Up</a
+              <router-link to="/SignupPage" class="btn btn-sm btnWarning px-3 rounded shadow"
+                >Sign Up</router-link
               >
             </div>
           </form>

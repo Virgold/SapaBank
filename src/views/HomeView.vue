@@ -12,7 +12,7 @@ import LandingPage from "./LandingPage.vue"
 export default {
   name:'HomeView',
   components:{
-    LandingPage
+    LandingPage,
   }
 }
 </script>
