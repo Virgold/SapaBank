@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </form>
-                <div class="d-flex login">
+                <div class="d-flex login">    
                     <p>
                         You have an account?<span><a href="">LOGIN</a></span>
                     </p>
