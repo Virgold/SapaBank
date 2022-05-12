@@ -23,6 +23,11 @@ const routes = [{
         },
     ]
 },
+{
+    path:"/SignupPage.vue",
+    name:"SignupPage",
+    component:SignUp,
+}
 
 ]
 
