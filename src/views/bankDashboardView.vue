@@ -20,17 +20,17 @@
   >
     <div class="align-self-center mt-5">
       <h5>Account Balance</h5>
-      <h2><img src="@/assets/Vector.png" alt="" />0.00</h2>
+      <h2><img src="@/assets/images/Vector.png" alt="" />0.00</h2>
     </div>
     <div class="align-self-center mt-5">
-      <img src="@/assets/bank-account.png" alt="" class="bank_acct_icon" />
+      <img src="@/assets/images/bankAccount.png" alt="" class="bank_acct_icon" />
     </div>
   </div>
   <div class="container mt-3">
     <div class="row justify-content-between">
       <div class="col-md-3 text-center">
         <div>
-          <img src="@/assets/bank-transfer.png" alt="" />
+          <img src="@/assets/images/bankTransfer.png" alt="" />
         </div>
         <div>
           <h6>Transfer</h6>
@@ -38,7 +38,7 @@
       </div>
       <div class="col-md-3 text-center">
         <div>
-          <img src="@/assets/bank-card.png" alt="" />
+          <img src="@/assets/images/bankCard.png" alt="" />
         </div>
         <div>
           <h6>Card</h6>
@@ -46,7 +46,7 @@
       </div>
       <div class="col-md-3 text-center">
         <div>
-          <img src="@/assets/credit-card.png" alt="" />
+          <img src="@/assets/images/creditCard.png" alt="" />
         </div>
         <div>
           <h6>Airtime</h6>
@@ -54,7 +54,7 @@
       </div>
       <div class="col-md-3 text-center">
         <div>
-          <img src="@/assets/plus.png" alt="" />
+          <img src="@/assets/images/plus.png" alt="" />
         </div>
         <div>
           <h6>Borrow</h6>
@@ -69,7 +69,7 @@
     <div class="mx-2">
       <h6>
         Account Number: 2346785091<img
-          src="@/assets/wallet.png"
+          src="@/assets/images/wallet.png"
           alt=""
           class="mx-2"
         />
