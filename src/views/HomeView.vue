@@ -2,6 +2,7 @@
   <div>
     <router-link to="/"></router-link> 
     <router-link to="/LandingPage"></router-link>
+  
   </div>
   <LandingPage />
 </template>
