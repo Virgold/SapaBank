@@ -21,6 +21,11 @@ const routes = [
     name: "LandingPage",
     component: Page,
 },
+{
+    path:"/SignupPage.vue",
+    name:"SignupPage",
+    component:SignUp,
+}
 
 {
     path: "/cardLayout",
