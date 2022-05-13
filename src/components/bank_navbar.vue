@@ -42,7 +42,7 @@
 // import { defineComponent } from '@vue/composition-api'
 
 export default{
-    name:'NavBar'
+    name:'BankNavBar'
 }
 </script>
 

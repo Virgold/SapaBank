@@ -1,12 +1,12 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/HomeView.vue";
-import Page from "../views/LandingPage.vue";
 import cardLayout from "../layout/ShortCardLayout.vue";
 import Transfer from "../views/TransferPage.vue";
 import TrackCard from "../views/TrackCard.vue";
 import  Apply  from "../views/ApplyCards.vue";
 import  LongCardLayout  from "../layout/LongCardLayout.vue";
 import CardAp from "../views/cardApplication.vue"
+import SignUp from "../components/SignupPage.vue";
 
 
 
