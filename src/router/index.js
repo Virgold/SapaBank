@@ -23,16 +23,6 @@ const routes = [{
         },
     ]
 },
-{
-    path:"/SignupPage",
-    name:"SignupPage",
-    component:SignUp,
-},
-{
-    path:"/airtime_page",
-    name:"airtime",
-    component:Airtime,
-}
 
 ]
 
