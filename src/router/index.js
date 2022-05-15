@@ -1,16 +1,29 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from '../views/HomeView.vue'
+import signUpPage from '../views/SignupPage.vue';
 import dashboardLayout from '@/Layouts/dashboardLayout.vue'
 import dashboardView from "../views/bankDashboardView.vue";
-import signUpPage from '../views/SignupPage.vue';
+import cardLayout from "../layout/ShortCardLayout.vue";
+import Transfer from "../views/TransferPage.vue";
+import TrackCard from "../views/TrackCard.vue";
+import  Apply  from "../views/ApplyCards.vue";
+import  LongCardLayout  from "../layout/LongCardLayout.vue";
+import CardAp from "../views/cardApplication.vue"
 
 
-const routes = [{
+
+
+const routes = [
+    {
     path: "/",
     name: "Home",
     component: Home,
 },
-
+{
+    path:"/SignUpPage",
+    name:"SignupPage",
+    component:signUpPage,
+},
 {
     path: "/dashboardLayout",
     name: "dashboardLayout",
@@ -24,13 +37,43 @@ const routes = [{
         },
     ]
 },
+{
+    path: "/cardLayout",
+    name: "CardLayout",
+    component: cardLayout,
+    redirect:"/cardLayout/trackCard",
+    children:[
+        {
+            path: "/cardLayout/trackCard",
+            name: "TrackCard",
+            component: TrackCard
+        },
+        {
+            path:"/cardLayout/application",
+            name:"cardApplication",
+            component:CardAp
+        },
+    ]
+},
+
 
 {
-    path:"/SignUpPage",
-    name:"SignupPage",
-    component:signUpPage,
+    path: "/longCardLayout",
+    name: "LongCardLayout",
+    component: LongCardLayout,
+    children:[
+        {
+            path: "/longCardLayout/applyCard",
+            name: "ApplyCard",
+            component: Apply
+        }
+    ]
+},
+{
+    path: "/transfer",
+    name: "transfer",
+    component: Transfer
 }
-
 ]
 
 const router = createRouter({

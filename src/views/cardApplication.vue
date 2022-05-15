@@ -1,19 +1,6 @@
 <template>
     <section class="body_section">
-        <div class="container d-flex justify-content-center">
-            <div class="card atm_card shadow mt-5">
-                <div class="card atm_card_lap">
-                    <div class="card-body">
-                        <p class="sm_card_head">SAPA</p>
-                        <p class="stage stage_1">S</p>
-                        <p class="stage stage_2">A</p>
-                        <p class="stage stage_3">P</p>
-                        <p class="stage stage_4">A</p>
-                        <p class="stage_last mt-4"><i>VISA</i></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="container d-flex justify-content-center mt-4">
           <button class="btn show_btn mb-2 pr-5">Show Details</button>
         </div>
