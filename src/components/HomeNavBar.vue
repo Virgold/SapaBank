@@ -31,12 +31,8 @@
           </ul>
           <form class="d-flex">
             <div class="ms-lg-4 mt-3 mt-lg-0">
-              <router-link to="/dashboardLayout" href="#" class="btn btn-sm btnSuccess px-3 rounded shadow me-1"
-                >Login</router-link
-              >
-              <a href="#" class="btn btn-sm btnWarning px-3 rounded shadow"
-                >Sign Up</a
-              >
+              <router-link to="/dashboardLayout" class="btn btn-sm btnSuccess px-3 rounded shadow me-1">Login</router-link>
+              <router-link to="/SignUpPage" class="btn btn-sm btnWarning px-3 rounded shadow">Sign Up</router-link>
             </div>
           </form>
         </div>
