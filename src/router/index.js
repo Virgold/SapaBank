@@ -3,11 +3,11 @@ import Home from '../views/HomeView.vue'
 import signUpPage from '../views/SignupPage.vue';
 import dashboardLayout from '@/Layouts/dashboardLayout.vue'
 import dashboardView from "../views/bankDashboardView.vue";
-import cardLayout from "../layout/ShortCardLayout.vue";
+import cardLayout from "../Layouts/ShortCardLayout.vue";
 import Transfer from "../views/TransferPage.vue";
 import TrackCard from "../views/TrackCard.vue";
 import  Apply  from "../views/ApplyCards.vue";
-import  LongCardLayout  from "../layout/LongCardLayout.vue";
+import  LongCardLayout  from "../Layouts/LongCardLayout.vue";
 import CardAp from "../views/cardApplication.vue"
 
 
