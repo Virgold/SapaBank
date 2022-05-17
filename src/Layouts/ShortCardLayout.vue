@@ -45,7 +45,7 @@ h5{
 .card{
     width:fit-content;
     height:fit-content;
-    box-shadow: 0px 5px #AF8055;
+    box-shadow: 0px 4px #AF8055;
     border-radius:  5px 5px 10px 10px !important;
 }
 
@@ -69,7 +69,7 @@ h5{
 }
 
 .bg-green{
-    background-color:#236457;
+    background: #166534;
     color:white;
 }
 
@@ -103,7 +103,7 @@ h5{
 }
 
 }
-@media (max-width:767px){
+@media (max-width:500px){
     .float-right{
     float:right;
     line-height: 2rem;
