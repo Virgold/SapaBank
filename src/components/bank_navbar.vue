@@ -17,10 +17,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <router-link class="nav-link" to="/cardLayout/application">Apply For card</router-link>
+              <!-- <a class="nav-link" href="#">Home</a> -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Community</a>
+              <router-link class="nav-link" to="/cardLayout/trackCard">Track card</router-link>
+              <!-- <a class="nav-link" href="#">Track Card</a> -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">help</a>
@@ -39,7 +41,7 @@
 // import { defineComponent } from '@vue/composition-api'
 
 export default{
-    name:'NavBar'
+    name:'BankNavBar'
 }
 </script>
 
