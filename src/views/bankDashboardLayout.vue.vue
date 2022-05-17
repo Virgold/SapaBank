@@ -1,22 +1,27 @@
 <template>
   <BankNavbar />
-  <div>
-      <BankDashboard /> 
+  <div class="layout-content">
+      <BankSidebar /> 
+      <router-view/>
   </div>
 
 </template>
 
 <script>
 import BankNavbar from "../components/bank_navbar.vue";
-import BankDashboard from "../components/bank_dashboard.vue";
+import BankSidebar from "../components/bank_sidebar.vue";
 
 export default {
-  components: {BankNavbar,BankDashboard,}
+  components: {BankNavbar,BankSidebar,}
 }
 </script>
 
 <style>
 #app {
       font-family: 'Bree Serif', serif;
+}
+.layout-content{
+  display: flex !important;
+    height: calc(100vh - 3.4rem);
 }
 </style>

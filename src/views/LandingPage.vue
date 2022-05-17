@@ -27,9 +27,11 @@
             <li class="nav-item">
               <a class="nav-link fw-bold" href="#">About</a>
             </li>
-            <li class="nav-item">
+            <router-link to="/bank_dashboard/bank_dashboardOverview">
+              <li class="nav-item">
               <a class="nav-link fw-bold" href="#">Services</a>
             </li>
+            </router-link>
           </ul>
           <form class="d-flex">
             <div class="ms-lg-4 mt-3 mt-lg-0">
