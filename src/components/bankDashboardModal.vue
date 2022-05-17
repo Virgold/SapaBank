@@ -1,6 +1,6 @@
 <template>
-    <div
-          class="modal fade"
+ <div
+          class="modal"
           id="exampleModal"
           tabindex="-1"
           role="dialog"
@@ -8,6 +8,7 @@
           aria-hidden="true"
         >
           <div class="modal-dialog" role="document">
+            
             <div class="modal-content">
               <div class="p-2 brown_modal">
                 <div class="container-fluid">
@@ -40,26 +41,40 @@
                   </div>
                 </div>
               </div>
+              
               <div class="modal-footer">
                 <div class="container-fluid">
                   <div class="row justify-content-center">
-                    <button
+                    <button  
+                      aria-label="Close"
                       type="button"
                       data-dismiss="modal"
-                      class="alert btn downloadReceipt"
+                      @click="offModal"
+                      class=" close alert btn downloadReceipt"
                     >
-                      Download Receipt
+                      Download Receipt (Close)
                     </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div> 
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      displayModal: false,
+    };
+  },
+  methods: {
+    offModal() {
+      this.$emit("close");
+    },
+  },
+};
 </script>
 <style scoped>
 body {
@@ -134,4 +149,9 @@ body {
 .downloadReceipt{
   background-color: #236457 !important;
 }
+.modal{
+  background: rgba(0,0,0, 0.5);
+  display: block !important;
+}
+  
 </style>
