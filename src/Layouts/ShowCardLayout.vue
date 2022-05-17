@@ -10,18 +10,31 @@
         <div class="card-bg-text ml-240"><p>A</p></div>
         <h6 class="text-end"><em>VISA</em></h6>
     </div>
+
 </div>
-<div>
-    <router-view />
-</div>
+<div class="text-center mt-5"><button class="btn bg-green">Show Details</button></div>
+<div class="container mt-5 mb-5">
+      <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h4 class="mb-0">Block Card</h4>
+                <p class="Text-small text-muted">Temporary disable this card</p>
+            </div>
+            <i class="fa fa-chevron-right"></i>
+      </div>
+  </div>
 </template>
 
 <script>
 import Navbar from "../components/bank_navbar.vue"
 export default {
 name:"NavB",
-components:{Navbar}
+components:{Navbar},
+method:{
+
 }
+}
+
+
 </script>
 
 <style scoped>
@@ -35,8 +48,13 @@ components:{Navbar}
     height:fit-content;
     box-shadow: 0px 4px #AF8055;
     border-radius: 15px 15px 15px 15px;
+    background: #166534 !important;
+    transition: .2s;
 }
-
+.card:hover{
+    /* background: #81bd98 !important; */
+    transform:rotateY(360deg)
+}
 .card-bg-text{
     font-size:60px;
     color:rgba(173, 182, 186, 0.42);
@@ -59,6 +77,14 @@ components:{Navbar}
 .bg-green{
     background: #166534;
     color:white;
+}
+.container{
+    max-width: 600px;
+}
+.container >div:nth-child(1){
+     background: #F1F1F1;
+     padding:1rem;
+     border-radius:2px;
 }
 @media (max-width:993px){
 .float-right{
@@ -83,5 +109,6 @@ components:{Navbar}
     margin-left:190px;
     margin-right:30px;
 }
+
 }
 </style>

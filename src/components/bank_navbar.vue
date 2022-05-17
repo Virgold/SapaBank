@@ -14,7 +14,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -57,22 +56,29 @@ span{
 .navbar-brand{
     font-size: 2rem;
     color: #236457 !important;
+    font-weight: bold;
+}
+.navbar-nav{
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
 }
 .user_icon{
     font-size: 20px;
+    margin-left: auto !important;
 }
 .navbar-collapse{
-    display: flex !important;
-    justify-content: center !important;
+    /* display: flex !important; */
+    justify-content: center;
 }
 .nav-link{
-    font-weight: 500;
-    font-size: 17px;
+    font-weight: bold;
+    font-size: 18px;
     color: black !important;
 }
 .nav-link:hover{
-    font-weight: 500;
-    font-size: 17px;
+    font-weight: bold;
+    font-size: 18px;
     color: #236457 !important ;
     text-decoration: underline;
 }
@@ -94,8 +100,8 @@ span{
     background-color: #AF8055;
     border-radius: 10px 10px 10px 10px;
 }
-.input-group{
-    border-bottom: 2px solid #E5E5E5;
+nav{
+    border-bottom: 3px solid #E5E5E5 !important;
 }
 .form-control:focus{
     border: none !important;

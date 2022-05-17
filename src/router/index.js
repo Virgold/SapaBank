@@ -1,14 +1,16 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Home from '../views/HomeView.vue'
+import Home from "../views/HomeView.vue";
+import Page from "../views/LandingPage.vue";
+import Dashboard from "../Layouts/dashboardLayout.vue";
 import signUpPage from '../views/SignupPage.vue';
-import dashboardLayout from '@/Layouts/dashboardLayout.vue'
-import dashboardView from "../views/bankDashboardView.vue";
 import cardLayout from "../Layouts/ShortCardLayout.vue";
 import Transfer from "../views/TransferPage.vue";
 import TrackCard from "../views/TrackCard.vue";
 import  Apply  from "../views/ApplyCards.vue";
 import  LongCardLayout  from "../Layouts/LongCardLayout.vue";
 import CardAp from "../views/cardApplication.vue"
+import BlockCard from "../views/BlockCards.vue"
+import ShowCard from "../Layouts/ShowCardLayout.vue"
 
 
 
@@ -20,22 +22,14 @@ const routes = [
     component: Home,
 },
 {
+    path: "/LandingPage",
+    name: "LandingPage",
+    component: Page,
+},
+{
     path:"/SignUpPage",
     name:"SignupPage",
     component:signUpPage,
-},
-{
-    path: "/dashboardLayout",
-    name: "dashboardLayout",
-    component: dashboardLayout,
-    redirect:"/dashboardLayout/dashboardView",
-    children:[
-        {
-            path: "/dashboardLayout/dashboardView",
-            name: "dashboardView",
-            component: dashboardView,
-        },
-    ]
 },
 {
     path: "/cardLayout",
@@ -52,8 +46,21 @@ const routes = [
             path:"/cardLayout/application",
             name:"cardApplication",
             component:CardAp
-        },
+        }
     ]
+},
+{
+    path: "/bank_dashboard",
+    name: "bank_dashboard",
+    redirect: "/bank_dashboard/bank_dashboardOverview",
+    component: Dashboard,
+    children: [{
+        path: "/bank_dashboard/bank_dashboardOverview",
+        name: "bankOverview",
+        component: () =>
+        import ("../components/bank_dashboardOverview.vue")
+    },
+],
 },
 
 
@@ -66,6 +73,11 @@ const routes = [
             path: "/longCardLayout/applyCard",
             name: "ApplyCard",
             component: Apply
+        },
+        {
+            path: "/longCardLayout/blockCard",
+            name: "Block cards",
+            component: BlockCard
         }
     ]
 },
@@ -73,6 +85,11 @@ const routes = [
     path: "/transfer",
     name: "transfer",
     component: Transfer
+},
+{
+    path:"/showcard",
+    name:"show card",
+    component: ShowCard
 }
 ]
 
