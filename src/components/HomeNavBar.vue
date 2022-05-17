@@ -73,7 +73,7 @@
     font-weight: 500;
     font-size: 17px;
     color: #236457 !important ;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 .navbar-toggler:focus {
     text-decoration: none;

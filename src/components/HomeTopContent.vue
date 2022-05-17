@@ -2,7 +2,7 @@
  
   <div class="container-fluid py-5 bgSuccess">
     <div class="py-md-5 mt-5">
-      <div class="container bg">
+      <div class="container">
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-12">
             <div class="mb-4 mb-xl-0 text-center text-md-start textGreen">
@@ -12,11 +12,9 @@
               </h1>
               <p class="mb-4 lead fw-bold">THE BANK OF THE BROKE</p>
               <img
-                src="../assets/background/man-have-no-money-unemployed-and-bankrupt-looks-into-his-empty-wallet-vector-removebg-preview.png"
+                src="../assets/background/handWallet.png"
                 alt=""
-                class="img-fluid d-none d-md-block"
-                width="400px"
-                height="400px"
+                class="img-fluid d-none d-md-block ImgSizing"
               />
             </div>
           </div>
@@ -60,7 +58,7 @@ export default {
 }
 
 .bg {
-  /* background-image: url(../assets/brand/Group-10.svg); */
+  background-image: url(../assets/brand/Group-10.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -74,5 +72,9 @@ export default {
     text-decoration: none;
     outline: 0;
     box-shadow: none;
+}
+.ImgSizing{
+ width: 20rem;
+ height: 20rem;
 } 
 </style>
