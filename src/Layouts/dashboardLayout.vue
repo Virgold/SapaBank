@@ -1,7 +1,7 @@
 <template>
   <BankNavbar />
-  <div class="layout-content">
-      <BankSidebar /> 
+  <div class="layout-content d-flex flex-row gap-2">
+      <BankSidebar/> 
       <router-view/>
   </div>
 
@@ -12,7 +12,9 @@ import BankNavbar from "../components/bank_navbar.vue";
 import BankSidebar from "../components/bank_sidebar.vue";
 
 export default {
-  components: {BankNavbar,BankSidebar,}
+  components:{
+  BankNavbar,
+  BankSidebar}
 }
 </script>
 
