@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/HomeView.vue";
-import Page from "../views/LandingPage.vue";
 import Dashboard from "../Layouts/dashboardLayout.vue";
 import signUpPage from '../views/SignupPage.vue';
 import cardLayout from "../Layouts/ShortCardLayout.vue";
@@ -20,11 +19,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
-},
-{
-    path: "/LandingPage",
-    name: "LandingPage",
-    component: Page,
 },
 {
     path:"/SignUpPage",
