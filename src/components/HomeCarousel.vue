@@ -236,7 +236,12 @@
 
 <script>
 export default {
+ name:'HomeCarousel',
+ data(){
+   return{
 
+   }
+ }
 }
 </script>
 

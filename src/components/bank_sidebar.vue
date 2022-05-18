@@ -9,7 +9,7 @@
 
         <ul class="sidebar__items p-0">
             <Logout v-if="showModal" @close="showModal = !showModal"/>
-            <router-link to="/bank_dashboard/bank_dashboardOverview">
+            <router-link to="/">
                 <li :class="{ active_item: active }" @click="noHover">
                     <i class="bi bi-house-door pr-1"></i>
                     Home
@@ -21,19 +21,19 @@
                     Community
                 </li>
             </router-link>
-            <router-link to="../components/bank_dashboardOverview.vue">
+            <router-link to="/transfer">
                 <li :class="{ active_item: active }" @click="noHover">
                     <i class="bi bi-house-door pr-1"></i>
                     Transfer
                 </li>
             </router-link>
-            <router-link to="../components/bank_dashboardOverview.vue">
+            <router-link to="/cardLayout">
                 <li :class="{ active_item: active }" @click="noHover">
                     <i class="bi bi-house-door pr-1"></i>
                     Card
                 </li>
             </router-link>
-            <router-link to="../components/bank_dashboardOverview.vue">
+            <router-link to="/airtime">
                 <li :class="{ active_item: active }" @click="noHover">
                     <i class="bi bi-house-door pr-1"></i>
                     Airtime

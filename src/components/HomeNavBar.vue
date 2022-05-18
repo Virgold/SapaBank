@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg  navbar-light bg-white mb-4">
+  <nav class="navbar navbar-expand-lg fixed-top  navbar-light bg-white mb-4">
       <div class="container">
         <a class="navbar-brand fw-bold fs-3 textGreen" href="#"
           >S<span class="" style="color: #af8055">A</span>PA</a
@@ -31,7 +31,7 @@
           </ul>
           <form class="d-flex">
             <div class="ms-lg-4 mt-3 mt-lg-0">
-              <router-link to="/dashboardLayout" class="btn btn-sm btnSuccess px-3 rounded shadow me-1">Login</router-link>
+              <router-link to="/bank_dashboard" class="btn btn-sm btnSuccess px-3 rounded shadow me-1">Login</router-link>
               <router-link to="/SignUpPage" class="btn btn-sm btnWarning px-3 rounded shadow">Sign Up</router-link>
             </div>
           </form>
@@ -73,7 +73,7 @@
     font-weight: 500;
     font-size: 17px;
     color: #236457 !important ;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 .navbar-toggler:focus {
     text-decoration: none;
