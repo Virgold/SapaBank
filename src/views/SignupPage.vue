@@ -35,7 +35,7 @@
                 </form>
                 <div class="d-flex login">    
                     <p>
-                        You have an account?<span><router-link to="/dashboardLayout" >LOGIN</router-link></span>
+                        You have an account?<span><router-link to="/bank_dashboard" >LOGIN</router-link></span>
                     </p>
                 </div>
             </div>
